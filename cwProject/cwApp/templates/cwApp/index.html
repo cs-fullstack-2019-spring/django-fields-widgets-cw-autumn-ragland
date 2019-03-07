@@ -5,7 +5,17 @@
     <title>HOME</title>
 </head>
 <body>
+{% block header%}
+<p>SUPERHEROS!</p>
+{% endblock %}
+
+{% block content %}
 <h2>Welcome All Super Heroes</h2>
 <h3>Please Apply for Residence in our Great City <a href="{% url 'application' %}">HERE</a></h3>
+{% endblock %}
+
+{% block footer%}
+<p>SUPERHEROS!</p>
+{% endblock %}
 </body>
 </html>
